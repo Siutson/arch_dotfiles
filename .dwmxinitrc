@@ -1,4 +1,5 @@
 #!/bin/sh
+# My regular .xinitrc for dwm. To use it simply write: 'mv .dwmxinitrc .xinitrc'
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
