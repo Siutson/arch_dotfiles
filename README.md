@@ -27,6 +27,8 @@ sudo pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort packages.txt))
 
 DWM is Dynamic Window Manager written in C. Any changes made to config files will be visible after rebuilding and restarting the program.
 
+.xinitrc for DWM can be found under the name .dwmxinitrc
+
 - Location of config files for DWM:
 
   - my fork of DWM is placed in: **.config/dwm/dwm-master** (any changes can be done mainly inside of config.h file)
@@ -36,12 +38,29 @@ DWM is Dynamic Window Manager written in C. Any changes made to config files wil
 
   - inside of DWM directory type the following command:
 
-  ```
-  sudo make clean install
-  ```
+    ```
+    sudo make clean install
+    ```
 
   - for installation of slstatus use the same command.
 
 #### 2. BSPWM
 
-BSPWM doesn't support keybindings so you need to install alongside it an external program: sxhkd, which aswell can be found in my repo.
+BSPWM doesn't support keybindings so you need to install alongside it an external program: sxhkd, which config can be found in my repo.
+It also didn't come with preinstalled bar. Bar of my choice is polybar.
+
+- Installation of BSPWM is way simpler than DWM but require more setup.
+  To install BSPWM and sxhkdrc you need to run the following command:
+
+  ```
+  sudo pacman -S bspwm sxhkd
+  ```
+
+  After installation simply copy config files to .config/bspwm/ and .config/sxhkd/.
+
+- Easiest way to install polybar is by using an AUR helper, for example yay.
+  If you decided to go with yay, paste the following command to begin installation:
+
+  ```
+  yay -S polybar
+  ```

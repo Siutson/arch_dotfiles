@@ -4,7 +4,9 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
+alias ll='ls -al'
 alias ls='ls --color=auto'
+alias vim='nvim'
 
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
@@ -56,3 +58,8 @@ bindkey '^Z' ctrlz
 
 # End of lines added by compinstall
 source /home/siutson/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# opam configuration
+test -r /home/siutson/.opam/opam-init/init.zsh && . /home/siutson/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+PATH=/home/siutson/.local/bin:$PATH
