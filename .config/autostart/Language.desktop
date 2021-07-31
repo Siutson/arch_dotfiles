@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/home/siutson/startup_scripts/lang.sh
-X-GNOME-Autostart-enabled=true
-NoDisplay=false
-Hidden=false
-Name[pl_PL]=Language
-Comment[pl_PL]=Set polish characters.
-X-GNOME-Autostart-Delay=0

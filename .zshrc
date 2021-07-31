@@ -6,11 +6,26 @@ bindkey -v
 
 alias ll='ls -al'
 alias ls='ls --color=auto'
-alias vim='nvim'
+alias vi='nvim'
+alias nf='neofetch'
+alias s='startx'
+alias g='g++'
+alias shn='shutdown now'
+alias scr='./.screenlayout/display.sh &'
 
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{yellow}(%b)%r%f'
+zstyle ':vcs_info:*' enable git
+
+PROMPT='%F{blue}%1~%f $ '
 
 # Tab completions - press twice
 autoload -U compinit
@@ -18,6 +33,10 @@ zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
+
+#MAKC non-keys sensitive completions
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -62,4 +81,4 @@ source /home/siutson/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # opam configuration
 test -r /home/siutson/.opam/opam-init/init.zsh && . /home/siutson/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-PATH=/home/siutson/.local/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
