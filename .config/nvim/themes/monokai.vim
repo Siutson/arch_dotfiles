@@ -1,6 +1,5 @@
-" --- the bestest colorscheme ---
 syntax on
-colorscheme gruvbox
+colorscheme monokai
 
 if (has("termguicolors"))
     set termguicolors

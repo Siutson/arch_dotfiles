@@ -18,8 +18,19 @@ set scrolloff=8 " keeps scrolling 8 lines away from top/bottom
 set signcolumn=yes
 set clipboard+=unnamedplus
 
+" python provider path
+let g:python3_host_prog = "/usr/bin/python3"
+
 " LaTeX preview
 let g:livepreview_previewer = 'zathura'
+
+" python syntax highlight
+let g:python_highlight_all = 1
+
+" ctrlp
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_user_command = 'find %s -type f'
 
 " --- devicons ---
 set encoding=UTF-8

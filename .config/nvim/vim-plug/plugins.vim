@@ -4,16 +4,30 @@ Plug 'preservim/nerdcommenter'
 " js-highlighting
 Plug 'yuezk/vim-js'
 
+" snippets
+Plug 'honza/vim-snippets'
+
+" python highlighting
+Plug 'vim-python/python-syntax'
+
+"Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+
+" fuzzyfinder - fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-lua/popup.nvim'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'tomasr/molokai'
+Plug 'nanotech/jellybeans.vim'
+Plug 'sickill/vim-monokai'
 "Plug 'danilo-augusto/vim-afterglow'
 
 " Plug 'neovim/nvim-lspconfig'

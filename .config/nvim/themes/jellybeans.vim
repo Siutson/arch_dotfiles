@@ -1,6 +1,5 @@
-" --- the bestest colorscheme ---
 syntax on
-colorscheme gruvbox
+colorscheme jellybeans
 
 if (has("termguicolors"))
     set termguicolors
