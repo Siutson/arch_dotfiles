@@ -1,22 +1,27 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+
+static const int vertpad            = 12;       /* vertical padding of bar */
+static const int sidepad            = 16;       /* horizontal padding of bar */
 static const int user_bh = 13;
 static const unsigned int cornerrad = 8;
 static const unsigned int borderpx  = 0;        /* border pixel size of windows */
 //static const unsigned int gappx     = 5;        [> gaps size between windows <]
-static const unsigned int gappih    = 12;
-static const unsigned int gappiv    = 12;
-static const unsigned int gappoh    = 12;
-static const unsigned int gappov    = 12;
+static const unsigned int gappih    = 16;
+static const unsigned int gappiv    = 16;
+static const unsigned int gappoh    = 16;
+static const unsigned int gappov    = 16;
 static const int smartgaps          = 0;
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=13", "fontawesome:size=13" };
-static const char dmenufont[]       = "monospace:size=12";
+static const char dmenufont[]       = "monospace:size=13";
 //background color
 static const char col_gray1[]       = "#222222";
+//static const char col_gray1[]       = "#111111";
+//static const char col_gray1[]       = "#000000";
 //inactive window border color
 static const char col_gray2[]       = "#444444";
 //font color
@@ -25,9 +30,10 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 //Top bar second color (blue) and active window border color
 static const char col_cyan[]        = "#f59542";
-
 //static const char col_green[]        = "#1A4649";
-static const char col_green[]        = "#562336";
+//static const char col_green[]        = "#562336";
+//static const char col_green[]        = "#234256";
+static const char col_green[]        = "#284C2E";
 //static const char col_green[]        = "#8EC07C";
 //static const char col_green[]        = "#6E4A58";
 
@@ -120,9 +126,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	//{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
+	//{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	//{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,              		    XK_n,      shiftview,  	   { .i = +1 } },
