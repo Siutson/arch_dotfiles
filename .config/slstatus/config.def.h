@@ -1,8 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-// dodac funkcje ktora sprawdza czy na $3 jest mi, jezeli tak to $3+$5, jezeli jest gi, to $3+0.$5
-// w sumie to nie do konca, jezeli jest gi w $3 i w $5 to normalna suma, a jak tylko w $3 to jw
-// free -h | grep "Pamięć" | awk '{ print($3 + $5) }'
-// free -h | grep "Pamięć" | awk '{print$3}' | cut -c 4,5,6
+
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
 
@@ -68,14 +65,5 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { battery_state, "| : %s"    , "BAT0" },
-    { battery_perc,  " %s%% | ", "BAT0" },
-	{ run_command, ": %4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-    { wifi_essid, "%s | ", "wlo1" },
-    //{ cpu_perc, "CPU: %s%% | ", NULL },
-    //cpu_perc above is the one that I was using
-    //{ cpu_perc, ": %s | ", NULL },
-    //{ ram_used, "RAM: %s |", NULL },
-    { run_command, " : %s | ", "sensors | grep id | awk '{print $4}'" },
-	{ datetime, "%s ",           "%F %T" },
+	{ datetime, "%s",           "%F %T" },
 };
