@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+<<<<<<< HEAD
 
 static const int vertpad            = 12;       /* vertical padding of bar */
 static const int sidepad            = 16;       /* horizontal padding of bar */
@@ -18,6 +19,15 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=13", "fontawesome:size=13" };
 static const char dmenufont[]       = "monospace:size=13";
+=======
+static const unsigned int borderpx  = 2;        /* border pixel size of windows */
+static const unsigned int gappx     = 5;        /* gaps size between windows */
+static const unsigned int snap      = 32;       /* snap pixel */
+static const int showbar            = 1;        /* 0 means no bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
+static const char *fonts[]          = { "monospace:size=12", "fontawesome:size=12" };
+static const char dmenufont[]       = "monospace:size=11";
+>>>>>>> parent of 506da33 (added rounded corners and changed bar height)
 //background color
 static const char col_gray1[]       = "#222222";
 //static const char col_gray1[]       = "#111111";
@@ -35,7 +45,6 @@ static const char col_cyan[]        = "#f59542";
 //static const char col_green[]        = "#234256";
 static const char col_green[]        = "#284C2E";
 //static const char col_green[]        = "#8EC07C";
-//static const char col_green[]        = "#6E4A58";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -59,7 +68,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	//{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
@@ -90,7 +99,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_green, "-sf", col_gray4, NULL };
 //static const char *filemanager[] = { "
 //launches htop
-//static const char *monitor[] = { "/usr/bin/htop", NULL };
+static const char *monitor[] = { "/usr/bin/htop", NULL };
 //sets st as the default terminal
 //static const char *termcmd[]  = { "st", NULL };
 //sets urxvt as the default terminal
@@ -102,7 +111,7 @@ static const char *mutevol[] = { "amixer", "-q", "set", "Master", "toggle", NULL
 static const char *prtscrcmd[] = { "flameshot", "gui", NULL};
 
 #include "shiftview.c"
-//static char *endx[] = { "/bin/sh", "-c", "endx", "externalpipe", NULL };
+static char *endx[] = { "/bin/sh", "-c", "endx", "externalpipe", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
@@ -148,7 +157,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-    { MODKEY|ShiftMask,             XK_g,      togglegaps,     {0} },
     { 0,                            XK_Print, spawn,           {.v = prtscrcmd } },
 };
 
