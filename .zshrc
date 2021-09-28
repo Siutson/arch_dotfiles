@@ -4,6 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/siutson/.oh-my-zsh"
 
+cal -3;echo "\n"
+echo "1.ToDo App\n2.Expense Tracker\n3.Note Taker\n4.Vowel Counter\n5.Memory Game\n"
+# Path to your oh-my-zsh installation.
+export ZSH="/home/siutson/.oh-my-zsh"
+export EDITOR=nvim
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -11,6 +16,8 @@ export ZSH="/home/siutson/.oh-my-zsh"
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="amuse"
 ZSH_THEME="avit"
+#ZSH_THEME="avit"
+ZSH_THEME="agnoster"
 
 #autoload -U promptinit; promptinit
 #prompt spaceship
@@ -113,6 +120,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
+function pdoc(){
+    pandoc "$1.md" -t beamer -o "$1.pdf"
+}
+
+
+alias lf='lfrun'
 alias ll='ls -al'
 alias ls='ls --color=auto'
 alias vi='nvim'
@@ -121,6 +134,12 @@ alias s='startx'
 alias g='g++'
 alias shn='shutdown now'
 alias scr='./.screenlayout/display.sh &'
+alias scr='./.screenlayout/display.sh'
+alias js='cd $HOME/workspace/projects/js/ ; lfcd'
+alias smci='sudo make clean install'
+alias vconf='cd $HOME/.config/nvim/ ; vi'
+alias docs='cd $HOME/workspace/Docs/ ; lfcd'
+alias kblay='$HOME/workspace/shell-scripts/keyb-layout.sh'
 
 #autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "

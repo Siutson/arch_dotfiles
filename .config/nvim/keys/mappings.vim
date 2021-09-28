@@ -1,5 +1,7 @@
 let mapleader = " "
 
+" fzf
+nnoremap <C-p> :Files<CR>
 
 " --- tabs ---
 let g:airline#extensions#tabline#enabled=1
@@ -11,6 +13,14 @@ nmap <leader>w :bd<CR>
 nmap <leader>l <C-w>l<CR>
 nmap <leader>k <C-w>h<CR>
 
+nmap <leader>k <C-w>l<CR>
+nmap <leader>j <C-w>h<CR>
+
+" --- running python code with F9 shortcut ---
+"imap <F9> <Esc>:w<CR>:!clear;python %<CR>
+"imap <F9> <Esc>:w<CR>:!python %<CR>
+"map <F9> <Esc>:w<CR>:!node %<CR>
+"autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 " --- CoC ---
 if has('nvim')
@@ -53,3 +63,6 @@ vmap <C-_> <Plug>NERDCommenterToggle<CR>
 nnoremap <leader>tf <cmd>Telescope find_files<cr>
 " live grep all files for specified thing
 nnoremap <leader>tg <cmd>lua require('telescope.builtin').live_grep()<cr>
+"nnoremap <leader>tf <cmd>Telescope find_files<cr>
+" live grep all files for specified thing
+"nnoremap <leader>tg <cmd>lua require('telescope.builtin').live_grep()<cr>
