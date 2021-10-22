@@ -3,6 +3,29 @@ let mapleader = " "
 " fzf
 nnoremap <C-p> :Files<CR>
 
+" markdown
+autocmd FileType markdown inoremap ;- <ESC>xxa<Tab><Tab>-<Space>
+autocmd FileType markdown inoremap ;h #<Space>
+autocmd FileType markdown inoremap ;sh ##<Space>
+autocmd FileType markdown inoremap ;ssh ###<Space>
+autocmd FileType markdown inoremap ;1 <ESC>xxa<Tab><Tab>1.<Space>
+autocmd FileType markdown inoremap ;n1 <ESC>k0vf.yjph<C-a>A<Space>
+autocmd FileType markdown inoremap ;b ****<Space><ESC>2hi
+autocmd FileType markdown inoremap ;i **<Space><ESC>hi
+autocmd FileType markdown inoremap ;eb ******<Space><ESC>3hi
+autocmd FileType markdown inoremap ;pic ![Title](path/to/file.png)<ESC>0wcw
+autocmd FileType markdown inoremap ;c ``<Space><ESC>hi
+
+autocmd FileType tex inoremap ;dc \documentclass[a4paper,12pt]{article}<Enter>
+autocmd FileType tex inoremap ;bd \begin{document}<Enter><Enter><Enter><Enter>\end{document}<ESC>2ki
+autocmd FileType tex inoremap ;t \title{}<Enter><Enter>\maketitle<Enter><ESC>3k$i
+autocmd FileType tex inoremap ;a \author{Daniel Siutkowski}<Enter>
+autocmd FileType tex inoremap ;d \date{\today}<Enter>
+autocmd FileType tex inoremap ;p \usepackage{}<ESC>i
+autocmd FileType tex inoremap ;s \section{}<ESC>i
+autocmd FileType tex inoremap ;t \begin{tabular}{  }<Enter>\hline<Enter><Enter>\end{tabular}<Esc>3k$hi
+
+
 " --- tabs ---
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemode=':t'

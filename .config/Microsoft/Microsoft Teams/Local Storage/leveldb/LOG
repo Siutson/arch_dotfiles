@@ -1,0 +1,6 @@
+2021/10/22-14:38:50.783 63d Reusing MANIFEST /home/siutson/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2021/10/22-14:38:50.785 63d Recovering log #70
+2021/10/22-14:38:50.785 63d Reusing old log /home/siutson/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/000070.log 
+2021/10/22-14:40:03.658 8d3 Level-0 table #74: started
+2021/10/22-14:40:03.667 8d3 Level-0 table #74: 214486 bytes OK
+2021/10/22-14:40:03.670 8d3 Delete type=0 #70

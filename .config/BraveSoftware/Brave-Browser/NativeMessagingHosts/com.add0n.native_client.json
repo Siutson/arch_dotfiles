@@ -1,0 +1,7 @@
+{
+  "name": "com.add0n.native_client",
+  "description": "Node Host for Native Messaging",
+  "path": "/home/siutson/.config/com.add0n.native_client/run.sh",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://hfckgfbhdacemicpjljhfbjmkiggeche/","chrome-extension://ijagoebbhgpklaaliglekagdjpigbcgm/","chrome-extension://jlodlegnpjplclncjkgolcmdhjmlokna/","chrome-extension://jfpmbokkdeapjommajdfmmheiiakdlgo/","chrome-extension://hlbdmmifbcfpccdnoknhdfcifiglaihb/","chrome-extension://eiejadjdcchfommckmikpcdnihljbpai/","chrome-extension://gpmjpkmohjgaimfhebdjebpgdnpcadji/","chrome-extension://hgadfjhoalnaidfdoilgeimnolhcodbc/","chrome-extension://ngaohleapbfjleillajbginbiaokmncm/","chrome-extension://kalnbllmkdiidgakcakkoecaahkpakmj/","chrome-extension://kajaikkhnmegmfnlifeklklaienhdekb/","chrome-extension://iidhcgjgmjodnfbghbgpdnhiajbmgcjo/","chrome-extension://jjbbcngfknmgdlekfofhaagmogeifbpc/","chrome-extension://ekeecmblpnobdaijmfkcfcnofopooipg/","chrome-extension://ilonanfdcnaljoedndpfeflllibalflj/","chrome-extension://cmddfbnhpokddncdalabdlmdckcdmboh/","chrome-extension://gecfhmlaldelfoeahjahajoooenmnlnd/","chrome-extension://eadfknilcdakacgehgfoedimdghaedgi/","chrome-extension://odbhmaaphiednnbgfionolmpkdplpilc/","chrome-extension://hfgnckeamhbkolmfeaieemklhejdcmai/","chrome-extension://dbghnkdojpkebjbddhhjfjgapoolnikh/","chrome-extension://ajcbbbkgmbinpbkllamhphpgpgdabnhf/","chrome-extension://iiekfngbnhgiecdjekibkbkaecdneobh/","chrome-extension://bihikkbcagnajdoncmjebpalfhecpjnb/"]
+  }

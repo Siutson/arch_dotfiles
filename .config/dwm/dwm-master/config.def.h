@@ -23,7 +23,10 @@ static const int urgbordercolor = 1;
 
 //static const char col_green[]        = "#284C2E";
 //static const char col_green[]        = "#2B2B2B";
-static const char col_green[]        = "#562336";
+//static const char col_green[]        = "#562336";
+static const char col_green[]        = "#27262C";
+
+
 //static const char col_green[]        = "#0C3833";
 //static const char col_green[]        = "#1A4649";
 //static const char col_green[]        = "#8EC07C";

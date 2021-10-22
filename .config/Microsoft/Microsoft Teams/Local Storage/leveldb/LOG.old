@@ -1,0 +1,14 @@
+2021/10/22-14:37:09.867 1730 Reusing MANIFEST /home/siutson/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2021/10/22-14:37:09.868 1730 Recovering log #66
+2021/10/22-14:37:09.882 1730 Level-0 table #69: started
+2021/10/22-14:37:09.898 1730 Level-0 table #69: 465174 bytes OK
+2021/10/22-14:37:09.901 1730 Delete type=0 #66
+2021/10/22-14:37:09.902 1740 Compacting 4@0 + 1@1 files
+2021/10/22-14:37:09.941 1740 Generated table #71@0: 173 keys, 700697 bytes
+2021/10/22-14:37:09.941 1740 Compacted 4@0 + 1@1 files => 700697 bytes
+2021/10/22-14:37:09.943 1740 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/10/22-14:37:09.944 1740 Delete type=2 #60
+2021/10/22-14:37:09.944 1740 Delete type=2 #62
+2021/10/22-14:37:09.944 1740 Delete type=2 #69
+2021/10/22-14:37:09.944 1740 Delete type=2 #65
+2021/10/22-14:37:09.944 1740 Delete type=2 #67

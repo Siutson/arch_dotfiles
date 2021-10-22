@@ -1,0 +1,11 @@
+512x512 -> 514x514
+%im(2:end+1,:) = im(:,:); %zdublowanie pierwszego wiersza
+%im(end+1,:) = im(end,:); %zdublowanie ostatniego wiersza
+
+%im(:,2:end+1) = im(:,:); %zdublowanie pierwszej kolumny
+%im(:,end+1) = im(:,end); %zdublowanie ostatniej kolumny
+%imshow(im);
+
+% floor(length(a)/2) <-- a: parametr przekazywany do funkcji - maska,
+% z tego wzoru obliczymy ilość wykonywania operacji powielenia wierszy i
+% kolumn

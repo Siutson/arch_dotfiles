@@ -244,14 +244,11 @@ static int screen;
 static int sw, sh;           /* X display screen geometry width, height */
 static int bh, blw = 0;      /* bar geometry */
 static int lrpad;            /* sum of left and right padding for text */
-<<<<<<< HEAD
 static int enablegaps = 1;
 static int enableoutergaps = 1;
 
 static int enablefullscreen = 0;
 
-=======
->>>>>>> parent of 506da33 (added rounded corners and changed bar height)
 static int (*xerrorxlib)(Display *, XErrorEvent *);
 static unsigned int numlockmask = 0;
 static void (*handler[LASTEvent]) (XEvent *) = {

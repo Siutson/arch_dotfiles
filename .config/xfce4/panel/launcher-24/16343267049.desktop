@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Name=Display
+Name[pl]=Ekran
+Comment=Configure screen settings and layout
+Comment[pl]=Konfiguruje ustawienia i układ ekranu
+Keywords=display;settings;screen;resolution;refresh;rate;rotation;external;projectors;monitors;LCD;CRT;HiDPI;
+Keywords[pl]=wyświetlacz;ustawienia;ekran;rozdzielczość;odświeżanie;częstotliwość;orientacja;zewnętrzny;projektory;monitory;LCD;CRT;HiDPI;
+Exec=xfce4-display-settings
+Icon=org.xfce.settings.display
+Terminal=false
+Type=Application
+Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=display
+X-XFCE-Source=file:///usr/share/applications/xfce-display-settings.desktop

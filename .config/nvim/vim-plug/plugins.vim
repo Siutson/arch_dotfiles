@@ -1,13 +1,28 @@
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
+
+" notes - slows down closing buffers to 2 secs
+"Plug 'vimwiki/vimwiki'
+"Plug 'Konfekt/FastFold'
+
+
+"vim-dotoo - org mode or sth
+"Plug 'dhruvasagar/vim-dotoo'
 
 " js-highlighting
 Plug 'yuezk/vim-js'
 
 " telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-lua/popup.nvim'
+"Plug 'nvim-lua/plenary.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
+
 " html live preview
 Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 
@@ -82,5 +97,5 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 " markdown preview
-Plug 'JamshedVesuna/vim-markdown-preview'
+"Plug 'JamshedVesuna/vim-markdown-preview'
 call plug#end()

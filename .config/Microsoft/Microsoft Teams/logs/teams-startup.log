@@ -1,0 +1,29 @@
+Error while parsing hooks JSON. Error: "ENOENT: no such file or directory, open '/home/siutson/.config/Microsoft/Microsoft Teams/hooks.json'"
+(node:1445) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:1445) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 ecsSettingsUpdated listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:1445) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 appInitialized listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:1445) UnhandledPromiseRejectionWarning: Error: LocalStorageService: key or value not defined
+    at m.<anonymous> (/usr/share/teams/resources/app.asar/main.bundle.js:1:401202)
+    at Generator.next (<anonymous>)
+    at /usr/share/teams/resources/app.asar/main.bundle.js:1:399460
+    at new Promise (<anonymous>)
+    at i (/usr/share/teams/resources/app.asar/main.bundle.js:1:399205)
+    at m.setValue (/usr/share/teams/resources/app.asar/main.bundle.js:1:401144)
+    at t.AppLevel.set (/usr/share/teams/resources/app.asar/main.bundle.js:16:681777)
+    at /usr/share/teams/resources/app.asar/main.bundle.js:16:689507
+    at Array.forEach (<anonymous>)
+    at t.appPreferenceKeys.reduce.n (/usr/share/teams/resources/app.asar/main.bundle.js:16:689454)
+(node:1445) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:1445) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:1445) UnhandledPromiseRejectionWarning: Error: LocalStorageService: key or value not defined
+    at m.<anonymous> (/usr/share/teams/resources/app.asar/main.bundle.js:1:401202)
+    at Generator.next (<anonymous>)
+    at /usr/share/teams/resources/app.asar/main.bundle.js:1:399460
+    at new Promise (<anonymous>)
+    at i (/usr/share/teams/resources/app.asar/main.bundle.js:1:399205)
+    at m.setValue (/usr/share/teams/resources/app.asar/main.bundle.js:1:401144)
+    at t.AppLevel.set (/usr/share/teams/resources/app.asar/main.bundle.js:16:681777)
+    at /usr/share/teams/resources/app.asar/main.bundle.js:16:689507
+    at Array.forEach (<anonymous>)
+    at t.appPreferenceKeys.reduce.n (/usr/share/teams/resources/app.asar/main.bundle.js:16:689454)
+(node:1445) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)

@@ -1,0 +1,32 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{blindtext}
+\begin{document}
+\title{Playing with \LaTeX}
+\author{Daniel Siutkowski}
+\date{\today}
+
+\maketitle
+
+Some text for testing purposes. Magic of \LaTeX
+
+\blindtext
+
+\section{Section added before the first one}%
+\label{sec:section_added_before_the_first_one}
+
+This section was created to show how \LaTeX{} can dynamically handle references to section numbers.
+
+\section{New section}%
+\label{sec:new_section}
+
+Some text in first section.
+
+\section{Second section}%
+\label{sec:second_section}
+
+A quick reference to section \ref{sec:new_section}.
+
+
+
+
+\end{document}

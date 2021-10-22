@@ -4,8 +4,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/siutson/.oh-my-zsh"
 
+export PG_OF_PATH=/home/siutson/workspace/dl/of_v0.11.2_linux64gcc6_release
+
 cal -3;echo "\n"
 echo "1.ToDo App\n2.Expense Tracker\n3.Note Taker\n4.Vowel Counter\n5.Memory Game\n"
+echo "ani-cli - naruto odc.20\n"
+echo "xampp sciezka do zawartosci localhostu: /opt/lampp/htdocs/scripts\n"
+echo "latex tabele, shortcuty || opencv matlab, animacja js, openframework, gienek matlab, pomysł na projekt - chlewicki\n"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/siutson/.oh-my-zsh"
 export EDITOR=nvim
@@ -120,10 +125,25 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
-function pdoc(){
+function mddoc-all(){
+    pandoc *.md --pdf-engine=xelatex --toc -o "merged.pdf"
+}
+
+function mddoc(){
+    pandoc "$1.md" --pdf-engine=xelatex -o "$1.pdf"
+}
+
+function mdpres(){
     pandoc "$1.md" -t beamer -o "$1.pdf"
 }
 
+function pmd-template(){
+    cp $HOME/workspace/dox/presentations/template-md/template.md  "$1.md"
+}
+
+function ptex-template(){
+    cp $HOME/workspace/dox/presentations/template-tex/template.tex  "$1.tex"
+}
 
 alias lf='lfrun'
 alias ll='ls -al'
@@ -138,7 +158,9 @@ alias scr='./.screenlayout/display.sh'
 alias js='cd $HOME/workspace/projects/js/ ; lfcd'
 alias smci='sudo make clean install'
 alias vconf='cd $HOME/.config/nvim/ ; vi'
-alias docs='cd $HOME/workspace/Docs/ ; lfcd'
+alias dox='cd $HOME/workspace/dox/ ; lfcd'
+alias dl='cd $HOME/workspace/dl/ ; lfcd'
+alias pix='cd $HOME/workspace/pix/ ; lfcd'
 alias kblay='$HOME/workspace/shell-scripts/keyb-layout.sh'
 
 #autoload -U colors && colors
@@ -209,4 +231,4 @@ source /home/siutson/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # opam configuration
 test -r /home/siutson/.opam/opam-init/init.zsh && . /home/siutson/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-PATH=/home/siutson/.local/bin:$PATH
+PATH=/home/siutson/.local/bin:$PATH:/home/siutson/workspace/dl/of_v0.11.2_linux64gcc6_release/libs/openFrameworks

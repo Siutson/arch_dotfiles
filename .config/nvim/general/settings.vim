@@ -8,7 +8,7 @@ set relativenumber
 set nu " better look at line you're currently on
 set nohlsearch " don't highlight searched phrase all the time
 set noerrorbells
-"set hidden
+set hidden
 set nowrap
 set noswapfile
 set nobackup
@@ -20,9 +20,24 @@ set signcolumn=yes
 set clipboard+=unnamedplus
 set timeoutlen=1000
 set ttimeoutlen=5
+"hi Normal guibg=NONE ctermbg=NONE
+
+
+" --- nerdcommenter ---
+filetype plugin on
+"set omnifunc=syntaxcomplete#Complete
+
+
+
+"let g:markdown_folding = 1
+"let g:tex_fold_enabled = 1
+"let g:fastfold_savehook = 1
+" vimwiki conf - notes
+"let g:vimwiki_list = [{'path': '~/workspace/dox/notes/',
+                      "\ 'syntax': 'markdown', 'ext': '.md'}]
 
 " snippets
-let g:UltiSnipsExpandTrigger="<C-space>"
+let g:UltiSnipsExpandTrigger="<C-s>"
 " list all snippets for current filetype
 let g:UltiSnipsListSnippets="<C-l>"
 
@@ -100,9 +115,6 @@ let g:python_highlight_all = 1
 " --- devicons ---
 set encoding=UTF-8
 
-" --- nerdcommenter ---
-filetype plugin on
-"set omnifunc=syntaxcomplete#Complete
 
 " --- colorizer ---
 lua require'colorizer'.setup()
@@ -112,6 +124,11 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+augroup markdown
+    au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+    au BufNewFile,BufFilePre,BufRead *.md set wrap
+augroup END
 
 augroup SIUTSON
     autocmd!

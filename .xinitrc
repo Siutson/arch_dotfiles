@@ -54,5 +54,7 @@ slstatus &
 nitrogen --restore &
 #$HOME/.screenlayout/display.sh &
 #picom --experimental-backends &
+#play-with-mpv &
 #exec dwm
 exec dbus-launch dwm
+#exec startxfce4
