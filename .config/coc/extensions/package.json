@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "coc-ccls": ">=0.0.5",
-    "coc-snippets": ">=2.4.6",
-    "coc-tsserver": ">=1.8.6"
-  }
-}

@@ -1,3 +1,0 @@
-default: 
-    extension: .m
-    output: colors

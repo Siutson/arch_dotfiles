@@ -2,27 +2,43 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/siutson/.oh-my-zsh"
+#export ZSH="/home/siutson/.oh-my-zsh"
 
-export PG_OF_PATH=/home/siutson/workspace/dl/of_v0.11.2_linux64gcc6_release
+#export PG_OF_PATH=/home/siutson/workspace/dl/of_v0.11.2_linux64gcc6_release
 
-cal -3;echo "\n"
-echo "1.ToDo App\n2.Expense Tracker\n3.Note Taker\n4.Vowel Counter\n5.Memory Game\n"
-echo "ani-cli - naruto odc.20\n"
-echo "xampp sciezka do zawartosci localhostu: /opt/lampp/htdocs/scripts\n"
-echo "latex tabele, shortcuty || opencv matlab, animacja js, openframework, gienek matlab, pomysł na projekt - chlewicki\n"
 # Path to your oh-my-zsh installation.
-export ZSH="/home/siutson/.oh-my-zsh"
+#export ZSH="/home/siutson/.oh-my-zsh"
 export EDITOR=nvim
+
+# .zshrc
+
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+
+# optionally define some options
+PURE_CMD_MAX_EXEC_TIME=10
+
+# change the path color
+zstyle :prompt:pure:path color white
+
+# change the color for both `prompt:success` and `prompt:error`
+zstyle ':prompt:pure:prompt:*' color cyan
+
+# turn on git stash status
+zstyle :prompt:pure:git:stash show yes
+
+prompt pure
+
+# .zshrc
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 #ZSH_THEME="amuse"
-ZSH_THEME="avit"
 #ZSH_THEME="avit"
-ZSH_THEME="agnoster"
+#ZSH_THEME="avit"
+#ZSH_THEME="agnoster"
 
 #autoload -U promptinit; promptinit
 #prompt spaceship
@@ -89,7 +105,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -153,8 +169,7 @@ alias nf='neofetch'
 alias s='startx'
 alias g='g++'
 alias shn='shutdown now'
-alias scr='./.screenlayout/display.sh &'
-alias scr='./.screenlayout/display.sh'
+alias scr='~/.screenlayout/resolution.sh ; nitrogen --restore &'
 alias js='cd $HOME/workspace/projects/js/ ; lfcd'
 alias smci='sudo make clean install'
 alias vconf='cd $HOME/.config/nvim/ ; vi'

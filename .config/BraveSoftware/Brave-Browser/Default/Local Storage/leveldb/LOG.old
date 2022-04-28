@@ -1,6 +1,0 @@
-2021/10/16-13:59:21.951 3 Reusing MANIFEST /home/siutson/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2021/10/16-13:59:21.955 3 Recovering log #25
-2021/10/16-13:59:21.957 3 Reusing old log /home/siutson/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000025.log 
-2021/10/16-13:59:38.545 3 Level-0 table #29: started
-2021/10/16-13:59:38.712 3 Level-0 table #29: 86012 bytes OK
-2021/10/16-13:59:38.719 3 Delete type=0 #25
